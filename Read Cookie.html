@@ -1,0 +1,24 @@
+<html>
+<head><title>Read cookie</title>
+<script>
+	function ReadCookie(){
+		var cookie=document.cookie;
+		document.write("All are stored cookie:"+cookie);
+
+		var cookiearray =cookie.spilit(";");
+		 for (var i=0; i<cookiearray.length; i++)
+			   {
+			   var cookie_pair=cookiearray[i];
+			   var name_value_array=cookie_pair.spilit("=");
+			   var name=name_value_array[0];
+			   var value=name_value_array[1];
+			   
+			   document.write("<br> Name is:"+name+"& Value is:"+value);
+			   }
+	}
+</script>
+<body>
+<p> Click the following button to get cookie</P>
+<input type="button" value="get cookie" onclick="ReadCookie()">
+</body>
+</html>
