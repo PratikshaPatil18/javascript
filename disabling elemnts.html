@@ -1,0 +1,19 @@
+<html>
+<head><title>Disabling elements</title>
+<script>
+function disable()
+{
+ document.getElementById("id1").disabled=true;
+}
+function enable()
+{
+document.getElementById("id1").disabled=false;
+}
+</script>
+</head>
+<body>
+Enter Name:<input type="text" name="t1" id="id1">
+<input type="button" value="disable"  onclick="disable()">
+<input type="button" value="Enable" onclick="enable()">
+</body>
+</html>
