@@ -1,0 +1,20 @@
+<html>
+<head><title> Regular Expression demo</title>
+<script>
+var p=/student/i;
+function testExp(){
+  var str=username.value;
+  if(p.test(str)){
+  alert("the string "+str+" is match to given pattern");
+  }else{
+   alert("the string "+str+" is not match to given pattern");
+   }
+}
+</script>
+</head>
+<body>
+<h3> checking the avability of string </h3>
+Enter Your String:<input type="text" id="username" name="tf1">
+<input type="button" name="b1" value="Result" onclick="testExp()">
+</body>
+</html>
