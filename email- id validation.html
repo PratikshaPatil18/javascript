@@ -1,0 +1,24 @@
+<html>
+<head><title> email- id validation</title>
+<script>
+ var p=/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+ function email()
+ {
+ var str=username.value;
+ if(p.test(str))
+ {
+ alert(" Your E-mail "+str+" is Valid.");
+ }
+ else
+ {
+ alert(" Your E-mail "+str+" is Invalid.");
+ }
+}
+</script>
+</head>
+<body>
+Enter Your E-mail ID:<input type="text" name="t1" id="username">
+<input type="button" name="b1" value="Result" onclick="email()"> 
+
+</body>
+</html>
