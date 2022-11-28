@@ -1,0 +1,25 @@
+<html>
+<head><title> Browser Location Properties </title>
+<script>
+function path(){
+ document.getElementById("a1").innerHTML="PathName :"+window.location.pathname;
+}
+function host(){
+document.getElementById("a1").innerHTML="Hostname :"+window.location.hostname;
+}
+function pro(){
+document.getElementById("a1").innerHTML="Protocol :"+window.location.protocol();
+}
+function assign(){
+document.getElementById("a1").innerHTML="Assign :"+window.location.assign();
+}
+</script>
+</head>
+<body>
+<input type="button" value=" Check Pathname " onclick="path()">
+<input type="button" value=" Check Hostname " onclick="host()">
+<input type="button" value=" Check Protocol " onclick="pro()">
+<input type="button" value=" Check Assign " onclick="assign()">
+<p id="a1"> </p>
+</body>
+</html>
