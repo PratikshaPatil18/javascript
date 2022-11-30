@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Entering the range of character.</title>
+<script>
+var p=/[A-Z]/;
+function testMatch(){
+ var str=username.value;
+ if(p.test(str)){
+ alert("the given string "+str+" range of character a-z-A-z.");
+ }else{
+ alert("the given string "+str+" is not range of character a-z-A-z.");
+ }
+}
+</script>
+</head>
+<body>
+Enter Your String: <input type="text" id="username">
+<input type="button" value="Check" name="b1" onclick="testMatch()">
+</body>
+</html>
