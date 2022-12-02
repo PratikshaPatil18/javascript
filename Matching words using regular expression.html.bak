@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Matching words using regular expression</title>
+<script>
+
+function MatchWord(){
+ var a=username.value;
+ var str=a.match(/student/g);
+ if(str!=null){
+ alert("the string "+a+"contains student");
+}else{
+alert("the string "+a+" not contains student");
+}
+</script>
+</head>
+<body>
+Enter Your String :<input type="text" id="username">
+<input type="button" value="Check" name="b1" onclick="MatchWord()">
+</body>
+</html>
