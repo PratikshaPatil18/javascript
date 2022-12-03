@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Replacing a text using regular expression</title>
+<script>
+var p=/[0-9]/;
+function testMatch(){
+ var str=username.value;
+ if(p.test(str)){
+ alert("the given digit "+str+" is digit.");
+ }else{
+ alert("the given string "+str+" is non-digit.");
+ }
+}
+</script>
+</head>
+<body>
+Enter Your String: <input type="text" id="username">
+<input type="button" value="Check" name="b1" onclick="testMatch()">
+</body>
+</html>
