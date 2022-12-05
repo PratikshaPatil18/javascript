@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Image Rollover</title></head>
+<body>
+<h4> Image Rollover</h4>
+<a> <img src="'C:\Users\Admin\Desktop\3rd Year\web\WebDevelopment\assets\red.jpg'"
+onmouseover="'C:\Users\Admin\Desktop\3rd Year\web\WebDevelopment\assets\rs.jpg'"
+onmouseout="'C:\Users\Admin\Desktop\3rd Year\web\WebDevelopment\assets\red.jpg'" ></a>
+</body>
+</html>
