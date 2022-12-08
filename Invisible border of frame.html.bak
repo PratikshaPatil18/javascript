@@ -1,0 +1,9 @@
+<html>
+<head><title> Invisible border of frame </title>
+<frameset cols="40%,40%,40%">
+ <frame style="background-color:orange" border="0">
+	<frame style="background-color:white" border="0">
+	<frame style="background-color:green" border="0">
+</frameset>
+</head>
+</html>
