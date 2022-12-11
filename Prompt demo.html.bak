@@ -1,0 +1,13 @@
+<html>
+<head><title>Prompt demo</title>
+<script>
+function msg(){
+var str=prompt("who are you ?");
+alert("I am "+str);
+}
+<script>
+</head>
+<body>
+<input type="button" value="click me" onclick="msg()">
+</body>
+<html>
