@@ -1,0 +1,18 @@
+<html>
+<head> <title> Regular Expression validation using textfield</title>
+<script>
+function validation(){
+var p=/^[a-zA-Z0-9.!#$%]+@+[a-zA-Z0-9]+(\.)+[a-zA-Z]/;
+var str=username.value;
+if(p.test(str)){
+alert("Valid Email-ID");
+}else{
+alert("Invalid Email-ID");
+}
+}
+</script>
+<body>
+Enter your E-mail ID :<input type="text" id="username" name="tf1">
+<input type="button" value="Result" onclick="validation()">
+</body>
+</html>
