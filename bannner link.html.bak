@@ -1,0 +1,33 @@
+<html>
+<head> <title> banner link</title></head>
+<script>
+Banner =new Array("abc.jpg","pqr.jpg","xyz.jpg");
+CurrentBanner=0;
+BannerLink =new Array("https://msbte.org.in","https://msbte.org.in","https://msbte.org.in");
+
+	
+function LinkBanner()
+{ document.location.href=""+BannerLink[CurrentBanner];
+}
+
+function DisplayBanner()
+{
+ if(document.images)
+ {
+ CurrentBanner++;
+ if(CurrentBanner==Banner.length)
+	 {
+	 CurrentBanner=0;
+	 }
+	 document.RotateBanner.src=Banner[CurrentBanner]
+	 setInterval("DisplayBanner()",1000);
+ }
+}
+</script>
+<body onload="DisplayBanner()">
+<center>
+<a href="javascript : LinkBanner()">
+<img src="abc.jpg" width="400" height="175" name="RotateBanner"></a>
+</center>
+</body>
+</html>
