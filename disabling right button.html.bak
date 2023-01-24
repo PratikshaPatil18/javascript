@@ -1,0 +1,10 @@
+<html>
+<head>
+</head>
+<script>
+ document.addEventListner('contextmenu',event=>event.preventDefault());
+</script>
+<body>
+right click button disable
+</body>
+</html>
